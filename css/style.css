@@ -261,25 +261,76 @@ body{
     max-height:90vh;
     max-width: auto;
 }
-.aboutimage{
-height:50vh;
-margin:50px 0 0 0;
-}
-.aboutimage .img-fluid .img-thumbnail{
-    color: #00325a !important;
-    border: 1px solid black;
-}
-
-.aboutsection{
-    /* margin-bottom: 15px; */
-    margin-bottom: 0;
-    /* font-family: 'Playfair Display', serif; */
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #307FB4 0%, #B58261 46%, #307FB4 100%);
+  body{overflow-x: hidden}
+    .heading_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
+.heading_container h2 {
+  padding-left: 5px;
+  position: relative;
+  border-left: 7px solid slategray;
+  font-weight: bold;
+}
+    .about_section {
+  position: relative;
+  padding-bottom: 10px;
+  background-color: #ffffff;
+}
+
+.about_section .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_section .img-box img {
+  width: 100%;
+}
+
+.about_section .detail-box p {
+  margin-top: 15px;
+  /* font-family: math; */
+  font-size: 17px;
+  text-align: justify;
+}
+
+.about_section .detail-box a {
+  display: inline-block;
+  padding: 7px 30px;
+  background-color: whitesmoke;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid lightsteelblue;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.about_section .detail-box a:hover {
+  background-color: lightblue;
+  border-color: transparent;
+  color: #ffffff;
+}
+
+.about_section .square-box {
+  position: absolute;
+  right: 25px;
+  bottom: 0;
+  width: 75px;
+}
+
+.about_section .square-box img {
+  width: 100%;
+}
 .Misvis{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1658,4 +1709,56 @@ box-shadow: 0px 3px 12px 0px #ccc;
     .hero_description {
         font-size: 38px;
       }
+}
+
+
+/* button about */
+
+
+
+
+/* CSS */
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
